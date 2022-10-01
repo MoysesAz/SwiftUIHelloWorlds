@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack{
+                Text("Crie uma navigation View")
+                Text("Dentro dela construa um NavigationLink")
+                NavigationLink(destination: Text("Destino"), label: {
+                    Text("Proxima tela")
+                })
+            }.navigationTitle("Como mudar de tela")
+            
+        }
+        
+       
     }
 }
 
