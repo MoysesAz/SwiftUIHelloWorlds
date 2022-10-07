@@ -16,11 +16,9 @@ struct ContentView: View {
                 NavigationLink(destination: Text("Destino"), label: {
                     Text("Proxima tela")
                 })
+                NavigationLink("List Example", destination: ListView())
             }.navigationTitle("Como mudar de tela")
-            
         }
-        
-       
     }
 }
 
